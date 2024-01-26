@@ -1,0 +1,5 @@
+.dashed-line {
+  border-top: 2px double #000; /* Creates a top border that is dashed */
+  width: 100%; /* Sets the width of the line */
+  margin: 25px 0; /* Adds some vertical space around the line */
+}
