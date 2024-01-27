@@ -1,9 +1,9 @@
 .profile {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   gap: 20px;
-  padding-left: 5%;
+  padding-right: 10%;
 }
 
 .profile > img {

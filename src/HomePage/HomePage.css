@@ -1,5 +1,29 @@
-.dashed-line {
-  border-top: 2px double #000; /* Creates a top border that is dashed */
-  width: 100%; /* Sets the width of the line */
-  margin: 25px 0; /* Adds some vertical space around the line */
+.Content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.Content > div {
+  width: 45%;
+  margin: auto;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+}
+
+/* Media query for tablet */
+@media (max-width: 1400px) {
+  .Content > div {
+    width: 70%;
+  }
+}
+
+/* Media query for phones */
+@media (max-width: 700px) {
+  .Content > div {
+    width: 90%;
+  }
 }

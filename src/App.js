@@ -9,18 +9,10 @@ import HomePage from "./HomePage/HomePage";
 function App() {
   return (
     <HashRouter>
-      <div className="App">
-        <div>
-          <Routes>
-            <Route exact path="/" element={<HomePage />} />
-            <Route
-              exact
-              path="/blog/haptic-xcel"
-              element={<HapticXcelBlog />}
-            />
-          </Routes>
-        </div>
-      </div>
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/blog/haptic-xcel" element={<HapticXcelBlog />} />
+      </Routes>
     </HashRouter>
   );
 }
