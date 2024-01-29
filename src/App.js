@@ -5,6 +5,7 @@ import {} from "react-router-dom";
 // Import Blog Posts
 import HapticXcelBlog from "./blogposts/HapticXcelBlog/HapticXcelBlog";
 import HomePage from "./HomePage/HomePage";
+import FooterComponent from "./FooterComponent/FooterComponent";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/blog/haptic-xcel" element={<HapticXcelBlog />} />
       </Routes>
+      <FooterComponent />
     </HashRouter>
   );
 }

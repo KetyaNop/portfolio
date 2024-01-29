@@ -1,0 +1,41 @@
+/* ClassComponent.css */
+
+.classComponent {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid #ddd; */
+  padding: 5px;
+  /* border-radius: 8px; */
+  /* background-color: #f9f9f9; */
+}
+
+.level200 {
+  color: green;
+}
+
+.level300 {
+  color: blue;
+}
+
+.level400 {
+  color: red;
+}
+
+.className {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.classDescription {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.classInstructor {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+  margin: 0;
+}
