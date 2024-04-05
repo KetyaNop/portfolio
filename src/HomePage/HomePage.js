@@ -23,19 +23,29 @@ const HomePage = () => {
         <div>
           <h1>Projects</h1>
           <ProjectCard
-            picture="/project_gif/furyrush.gif"
-            title="Fury Rush"
-            description="A “How to Train Your Dragon” inspired infinite runner game using Three.js."
-            tags={["Three.js", "Typescript"]}
-            blogPath="/blog/fury-rush"
-            demo="https://kritinv.github.io/how-to-train-your-dragon/"
+            picture={"placeholder_diw_printer.jpg"}
+            title={"(Ongoing) Producing Calligraphy with Closed-Loop Control of Direct Ink Writing Via Reinforcement Learning"}
+            description={""}
+            advisor={"Ryan P Adams"}
+            tags={[]}
           />
           <ProjectCard
             picture="/project_gif/haptic-xcel.gif"
             title="Hapster"
             description="A visuo-vibrotactile modality for live low-Friction student feedback in the classroom."
+            advisor={"Parastoo Abtahi, Andrés Monroy-Hernández."}
             tags={["FastAPI", "React"]}
-            blogPath="/blog/hapster"
+            blogPath="https://drive.google.com/file/d/1Rmkebj7_CEp38pSncG8m6i3Llrzd3niA/view?usp=sharing"
+          />
+          <ProjectCard
+            picture="/project_gif/furyrush.gif"
+            title="Fury Rush"
+            description="A “How to Train Your Dragon” inspired infinite runner game using Three.js."
+            advisor={"Adam Finkelstein"}
+            tags={["Three.js", "Typescript"]}
+            blogPath="https://github.com/kritinv/how-to-train-your-dragon/blob/main/Final%20Written%20Report.pdf"
+            demo="https://kritinv.github.io/how-to-train-your-dragon/"
+            srcCode="https://github.com/kritinv/how-to-train-your-dragon/tree/main"
           />
           <ProjectCard
             picture="/project_gif/poker_preflop.gif"
@@ -43,6 +53,7 @@ const HomePage = () => {
             description="A poker preflop range visualizer web application using React.js."
             tags={["React", "React Joyride"]}
             demo="https://degen101.club/"
+            srcCode={"https://github.com/kritinv/degen101"}
           />
         </div>
         <div>

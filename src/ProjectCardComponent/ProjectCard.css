@@ -62,3 +62,9 @@
 .demo-link:hover {
   text-decoration: underline;
 }
+
+.advisor-info {
+  font-style: italic;
+  color: #666;
+  font-size: 14px;
+}

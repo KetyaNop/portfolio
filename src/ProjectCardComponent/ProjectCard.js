@@ -2,7 +2,7 @@ import React from "react";
 import "./ProjectCard.css";
 import { Link } from "react-router-dom";
 
-function ProjectCard({ picture, title, description, tags, blogPath, demo }) {
+function ProjectCard({ picture, title, description, tags, blogPath, demo, srcCode, advisor}) {
   return (
     <div className="project-card">
       <div className="card-image">
@@ -14,7 +14,15 @@ function ProjectCard({ picture, title, description, tags, blogPath, demo }) {
       </div>
       <div className="card-content">
         <h2>{title}</h2>
-        <p>{description}</p>
+        <p>
+          {description}
+          {advisor && (
+            <>
+              <br />
+              <span className="advisor-info">Advisor: {advisor}</span>
+            </>
+          )}
+        </p>
         <ul className="tag-list">
           {tags.map((tag, index) => (
             <li key={index}>{tag}</li>
@@ -27,7 +35,7 @@ function ProjectCard({ picture, title, description, tags, blogPath, demo }) {
             Read More
           </Link>
         )}
-        {blogPath && demo && <br />}
+        {(blogPath || demo) && <br />}
         {demo && (
           <Link
             to={demo}
@@ -35,6 +43,16 @@ function ProjectCard({ picture, title, description, tags, blogPath, demo }) {
             rel="noopener noreferrer"
             className="demo-link">
             Demo↗
+          </Link>
+        )}
+        {(demo || srcCode) && <br />}
+        {srcCode && (
+          <Link
+            to={srcCode}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="src-code-link">
+            Src Code↗
           </Link>
         )}
       </div>
