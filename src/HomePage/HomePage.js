@@ -86,6 +86,11 @@ const HomePage = () => {
               instructor="Robert Dondero"
             />{" "}
             <ClassComponent
+              name="COS323"
+              description="Computing and Optimization"
+              instructor="Ioannis Akrotirianakis"
+            />
+            <ClassComponent
               name="COS324"
               description="Introduction to Machine Learning"
               instructor="Sanjeev Arora and Danqi Chen"
@@ -109,6 +114,11 @@ const HomePage = () => {
               name="COS436"
               description="Human-Computer Interaction"
               instructor="Andrés Monroy-Hernández and Parastoo Abtahi"
+            />
+            <ClassComponent
+              name="COS445"
+              description="Economics and Computation"
+              instructor="Matt Weinberg and Marcel Dall'Agnol"
             />
             <ClassComponent
               name="COS461"
